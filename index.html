@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Health condition through eye condition </title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+      body {
+            margin: 0;
+            font-family: 'Poppins', Arial, sans-serif;
+            color: #333;
+            
+        }
+
+        /* Header Styling */
+        header {
+            background: rgb(245, 241, 232);;
+            padding: 50px 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            height: 100px;
+        }
+
+        .logo img {
+            width: 200px;
+        }
+         /* FAQ Section Styling (Basic) */
+         .faq-section {
+            padding: 40px 20px;
+            background-color: #f9f9f9; /* Light grey background */
+        }
+
+        .faq-section h2 {
+            text-align: center;
+            color: #555;
+            margin-bottom: 30px;
+        }
+
+        .faq-item {
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden; /* To contain the border-radius of the content */
+        }
+
+        .faq-question {
+            background-color: #fff;
+            padding: 15px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .faq-question::after {
+            content: '\25BE'; /* Down arrow */
+            font-size: 1.2em;
+        }
+
+        .faq-answer {
+            padding: 15px;
+            background-color: rgb(245, 241, 232);
+            display: none; /* Hidden by default */
+            color: #666; /* Added a slightly lighter text color for the answer */
+        }
+
+        /* Basic styling for the active state (you can enhance this) */
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+
+        .faq-item.active .faq-question::after {
+            content: '\25B4'; /* Up arrow */
+        }
+
+
+  </style>
+</head>
+<body>
+  <header>
+     <div class="logo">
+      <img src="assets/eye.png" alt="Visionary Logo">
+    </div>
+    <nav>
+      <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="Who we help.html">Who we help</a></li>
+          <li><a href="Solutions.html">Solutions</a></li>
+          <li><a href="Problems.html">Problems</a></li>
+          <li><a href="Research.html">Research</a></li>
+          <li><a href="Company.html">Company</a></li>
+          <!-- <li><a href="about.html">About</a></li> -->
+      </ul>
+  </nav>
+</header>
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="container">
+      <h1>Transform Eye Health with Visionary</h1>
+      <p>
+        Our AI-powered platform analyzes eye conditions to detect early signs of health issues.
+      </p>
+      <div class="cta-buttons">
+        <button>Get Started</button>
+        <button>Learn More</button>
+      </div>
+    </div>
+  </section>
+  
+  <!-- How Visionary Works -->
+  <section class="how-it-works">
+    <h2>How Visionary Works</h2>
+    <p>
+      Using cutting-edge AI, Visionary scans eye images to detect health anomalies and provide actionable insights.
+    </p>
+    <div class="features">
+      <div class="feature">
+        <img src="assets/scan.png" alt="Scan Icon" />
+        <h3>Scan Eye Images</h3>
+        <p>Upload eye images using our platform or mobile app.</p>
+      </div>
+      <div class="feature">
+        <img src="assets/ai.png" alt="AI Icon" />
+        <h3>AI Analysis</h3>
+        <p>Advanced AI detects early signs of health conditions through image patterns.</p>
+      </div>
+      <div class="feature">
+        <img src="assets/report.png" alt="Report Icon" />
+        <h3>Health Report</h3>
+        <p>Receive detailed diagnostic reports to aid clinical decisions.</p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Features Section -->
+  <section class="visionary-features">
+    <h2>AI-Powered Eye Analysis Technology</h2>
+    <p>
+      Discover how our technology helps detect conditions early, improves outcomes, and reduces healthcare burden.
+    </p>
+    <div class="grid">
+      <div class="card">
+        <h3>Up to 95%+ Accuracy</h3>
+        <p>AI detects subtle patterns in retina images indicating possible conditions.</p>
+      </div>
+      <div class="card">
+        <h3>Early Detection</h3>
+        <p>Identify diseases like diabetes or hypertension before symptoms appear.</p>
+      </div>
+      <div class="card">
+        <h3>Detailed Insights</h3>
+        <p>Comprehensive analysis to support doctors and health professionals.</p>
+      </div>
+      <div class="card">
+        <h3>15,000+ Patients</h3>
+        <p>Trusted by healthcare systems worldwide.</p>
+      </div>
+      <div class="card">
+        <h3>Data-Driven Reports</h3>
+        <p>Visual analytics for easy understanding and decision-making.</p>
+      </div>
+      <div class="card">
+        <h3>Continuous Monitoring</h3>
+        <p>Track eye health over time to catch issues early.</p>
+      </div>
+    </div>
+  </section>
+
+<section class="full-image-section">
+  <div class="hero-section">
+    <h1>"Visionary - Where Eyes Reveal Health"</h1>
+    <p>Visionary uses advanced AI to detect health conditions through eye analysis...</p>
+    
+    <div class="cta-buttons">
+      <button onclick="location.href='Get in Touch.html'">Get in Touch</button>
+    </div>
+  </div>
+</section>
+
+  
+<section class="faq-section">
+  <h2>FREQUENTLY ASKED QUESTIONS</h2>
+  <div class="faq-item">
+      <div class="faq-question">
+          How can Visionary detect health conditions through my eyes?
+      </div>
+      <div class="faq-answer">
+          Visionary utilizes advanced AI algorithms to analyze detailed images of your eyes, identifying subtle indicators and patterns that may be associated with various health conditions.
+      </div>
+  </div>
+  <div class="faq-item">
+      <div class="faq-question">
+          Is the analysis process safe and non-invasive?
+      </div>
+      <div class="faq-answer">
+          Yes, the analysis is completely safe and non-invasive. It typically involves capturing images of your eyes using standard imaging techniques. There is no direct contact or any harmful procedures involved.
+      </div>
+  </div>
+  <div class="faq-item">
+      <div class="faq-question">
+          What types of health conditions can Visionary potentially detect?
+      </div>
+      <div class="faq-answer">
+          Visionary is being developed to potentially detect a range of health conditions. Our research is ongoing, and we aim to provide information on the specific conditions we can analyze as our technology advances.
+      </div>
+  </div>
+  <div class="faq-item">
+      <div class="faq-question">
+          Is Visionary a substitute for traditional medical diagnosis?
+      </div>
+      <div class="faq-answer">
+          No, Visionary is intended to be a supportive tool and not a substitute for professional medical advice, diagnosis, or treatment. Any findings should always be discussed with a qualified healthcare provider for proper evaluation and guidance.
+      </div>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 Visionary<br>Contact us at: <a href="mailto:infoVisionary.com">info@Visionary.com</a></p>
+</footer>
+<script>
+  const faqItems = document.querySelectorAll('.faq-item');
+
+  faqItems.forEach(item => {
+      const question = item.querySelector('.faq-question');
+      question.addEventListener('click', () => {
+          item.classList.toggle('active');
+      });
+  });
+</script>
+</body>
+</html>
