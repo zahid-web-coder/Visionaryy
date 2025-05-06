@@ -15,7 +15,7 @@
 
 .full-image-section {
     background: 
-        linear-gradient(to bottom,  rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)),
+        linear-gradient(to bottom,  rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)),
         url('assets/oo.jpg') no-repeat center center / cover;
     height: 100vh;
     width: 100%;
@@ -136,12 +136,14 @@ nav ul li a:hover {
   }
   
   .feature {
-    background: white;
+    background:rgb(245, 241, 232);
     padding: 25px;
     border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     width: 250px;
   }
+  .feature:hover {
+    box-shadow: 0 4px 15px rgb(83 83 83 / 90%);
+}
   
   .feature img {
     width: 50px;
@@ -156,12 +158,150 @@ nav ul li a:hover {
   }
   
   .card {
-    background: white;
+    background:rgb(245, 241, 232);
     padding: 25px;
     border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     text-align: left;
   }
+  .card:hover {
+    box-shadow: 0 4px 15px rgb(83 83 83 / 90%);
+}
+
+  @media (max-width: 768px) {
+  /* Navigation */
+  nav ul {
+    flex-direction: column;
+    gap: 15px;
+    background: rgb(245, 241, 232);
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    display: none;
+    padding: 20px 0;
+  }
+
+  #menu-toggle:checked + .menu-icon + nav ul {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+    font-size: 28px;
+    margin-right: 20px;
+  }
+
+  /* Show hamburger icon */
+  #menu-toggle {
+    display: none;
+  }
+
+  nav {
+    position: relative;
+  }
+
+  /* Hero Section */
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+
+  .hero-section p {
+    font-size: 1.1rem;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .cta-buttons button {
+    width: 80%;
+    font-size: 1rem;
+  }
+
+  /* Features Section */
+  .features {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature {
+    width: 90%;
+  }
+
+  .visionary-features .grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 768px) {
+  /* Navigation */
+  nav ul {
+    flex-direction: column;
+    gap: 15px;
+    background: rgb(245, 241, 232);
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    display: none;
+    padding: 20px 0;
+  }
+
+  #menu-toggle:checked + .menu-icon + nav ul {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+    font-size: 28px;
+    margin-right: 20px;
+  }
+
+  /* Show hamburger icon */
+  #menu-toggle {
+    display: none;
+  }
+
+  nav {
+    position: relative;
+  }
+
+  /* Hero Section */
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+
+  .hero-section p {
+    font-size: 1.1rem;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .cta-buttons button {
+    width: 80%;
+    font-size: 1rem;
+  }
+
+  /* Features Section */
+  .features {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature {
+    width: 90%;
+  }
+
+  .visionary-features .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
   
 
 footer {
