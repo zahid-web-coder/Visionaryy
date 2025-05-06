@@ -86,5 +86,12 @@
       </p>
     </div>
   </div>
+  <script>
+    document.querySelector("form").addEventListener("submit", function(e) {
+      e.preventDefault(); // Prevent actual form submission
+      alert("Thank you for getting in touch! We’ll get back to you shortly.");
+      this.reset(); // Optional: Clear the form fields
+    });
+  </script>
 </body>
 </html>
